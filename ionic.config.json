@@ -1,0 +1,7 @@
+{
+  "name": "auditDapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
