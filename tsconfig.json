@@ -3,6 +3,16 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "crypto": ["node_modules/crypto-browserify"],
+      "stream": ["node_modules/stream-browserify"],
+      "http": ["node_modules/http-browserify"],
+      "https": ["node_modules/https-browserify"],
+      "stream-http": ["node_modules/stream-http"],
+      "os": ["node_modules/os-browserify"],
+      "assert": ["node_modules/assert"],
+    },
+    "allowSyntheticDefaultImports":true,
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,

@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import Moralis from 'moralis';
+import { environment } from '../environments/environment';
+
+Moralis.initialize(environment.moralisAppId);
+Moralis.serverURL = environment.moralisUrl;
 
 @Component({
   selector: 'app-root',
@@ -6,5 +11,6 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor() {
+  }
 }
